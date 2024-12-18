@@ -42,18 +42,6 @@ const SpacePage = () => {
               "https://twitter.com/zigouplex",
               "https://www.linkedin.com/company/zigouplex"
             ],
-            "productSeries": [
-              {
-                "@type": "Product",
-                "name": "Zigouplex 2000",
-                "description": "Lanceur spatial lourd de nouvelle génération"
-              },
-              {
-                "@type": "Product",
-                "name": "Zigouplex 301",
-                "description": "Lanceur spatial moyen optimisé pour les constellations"
-              }
-            ]
           })}
         </script>
       </Head>
