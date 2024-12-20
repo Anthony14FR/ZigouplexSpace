@@ -40,49 +40,49 @@ const SpacePage = () => {
         <link rel="canonical" href="https://www.zigouplex.space" />
 
         <script type="application/ld+json">
-          {JSON.stringify(
-            {
+          {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Zigouplex",
-            "url": "https://www.zigouplex.space",
-            "logo": "https://www.zigouplex.space/favicon.png",
-            "description": "Leader dans le développement de lanceurs spatiaux innovants",
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
+            "@graph": [
               {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Accueil",
-                "item": "https://www.zigouplex.space"
+                "@type": ["WebSite", "Organization"],
+                "@id": "https://www.zigouplex.space/#website",
+                "url": "https://www.zigouplex.space",
+                "name": "Zigouplex",
+                "description": "Leader dans le développement de lanceurs spatiaux innovants"
               },
               {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Technologie",
-                "item": "https://www.zigouplex.space#overview"
+                "@type": "WebPage",
+                "@id": "https://www.zigouplex.space/#webpage",
+                "url": "https://www.zigouplex.space",
+                "name": "Zigouplex - Lanceurs Spatiaux de Nouvelle Génération",
+                "description": "Découvrez les fusées Zigouplex 2000 et 301, la nouvelle génération de lanceurs spatiaux combinant performance exceptionnelle et innovation technologique.",
+                "isPartOf": { "@id": "https://www.zigouplex.space/#website" },
+                "primaryImageOfPage": {
+                  "@type": "ImageObject",
+                  "@id": "https://www.zigouplex.space/#primaryimage",
+                  "url": "https://images.unsplash.com/photo-1516849841032-87cbac4d88f7",
+                  "width": 1920,
+                  "height": 1080
+                },
+                "breadcrumb": { "@id": "https://www.zigouplex.space/#breadcrumb" },
+                "inLanguage": "fr-FR",
+                "datePublished": "2024-01-01T00:00:00+00:00",
+                "dateModified": new Date().toISOString()
               },
-            ]
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "Zigouplex - Lanceurs Spatiaux de Nouvelle Génération",
-            "url": "https://www.zigouplex.space",
-            "description": "Découvrez les fusées Zigouplex 2000 et 301, la nouvelle génération de lanceurs spatiaux combinant performance exceptionnelle et innovation technologique.",
-            "publisher": {
-              "@type": "Organization",
-              "name": "Zigouplex",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://www.zigouplex.space/favicon.png"
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://www.zigouplex.space/#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Accueil",
+                    "item": "https://www.zigouplex.space"
+                  }
+                ]
               }
-            }
-          }
-          )}
+            ]
+          })}
         </script>
       </Head>
 
@@ -94,7 +94,7 @@ const SpacePage = () => {
               alt="Lancement spatial nocturne" 
               className="object-cover w-full h-full"
               loading="eager"
-              fetchpriority="high"
+              fetchPriority="high"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/50" />
           </div>

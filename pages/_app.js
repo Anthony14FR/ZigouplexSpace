@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <html lang="fr" />
+        <meta httpEquiv="Content-Language" content="fr" />
       </Head>
       <Component {...pageProps} />
     </>
