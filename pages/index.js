@@ -16,73 +16,103 @@ const SpacePage = () => {
     setActiveSection(sectionId);
   };
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["WebSite", "Organization"],
+        "@id": "https://www.zigouplex.space/#website",
+        "url": "https://www.zigouplex.space",
+        "name": "Zigouplex",
+        "description": "Leader dans le développement de lanceurs spatiaux innovants",
+        "sameAs": [
+          "https://twitter.com/zigouplex",
+          "https://linkedin.com/company/zigouplex",
+          "https://facebook.com/zigouplex"
+        ],
+        "founder": {
+          "@type": "Person",
+          "name": "Dr. Lukas Zigouplex",
+          "jobTitle": "CEO & Fondateur"
+        },
+        "foundingDate": "2024-01-01",
+        "location": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "FR",
+            "addressLocality": "Paris",
+            "addressRegion": "Île-de-France",
+            "postalCode": "75012"
+          }
+        },
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.zigouplex.space/#webpage",
+        "url": "https://www.zigouplex.space",
+        "name": "Zigouplex - Lanceurs Spatiaux de Nouvelle Génération",
+        "description": "Découvrez les fusées Zigouplex 2000 et 301, la nouvelle génération de lanceurs spatiaux combinant performance exceptionnelle et innovation technologique.",
+        "isPartOf": { "@id": "https://www.zigouplex.space/#website" },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "@id": "https://www.zigouplex.space/#primaryimage",
+          "url": "https://images.unsplash.com/photo-1516849841032-87cbac4d88f7",
+          "width": 1920,
+          "height": 1080,
+          "caption": "Lancement nocturne d'une fusée Zigouplex"
+        },
+        "breadcrumb": { "@id": "https://www.zigouplex.space/#breadcrumb" },
+        "inLanguage": "fr-FR",
+        "datePublished": "2024-01-01T00:00:00+00:00",
+        "dateModified": new Date().toISOString(),
+        "keywords": [
+          "lanceur spatial réutilisable",
+          "technologie spatiale française",
+          "propulsion spatiale",
+          "Zigouplex 2000",
+          "Zigouplex 301",
+          "satellite mise en orbite",
+          "fusée nouvelle génération",
+          "exploration spatiale durable",
+          "innovation aérospatiale",
+          "transport spatial commercial",
+          "entreprise spatiale paris",
+          "développement spatial île-de-france"
+        ]
+      }
+    ]
+  };
+
   return (
     <>
       <Head>
         <title>Zigouplex - Lanceurs Spatiaux de Nouvelle Génération</title>
-        <meta name="description" content="Découvrez les fusées Zigouplex 2000 et 301, la nouvelle génération de lanceurs spatiaux combinant performance exceptionnelle et innovation technologique." />
-        <meta name="keywords" content="Zigouplex, lanceur spatial, fusée spatiale, Zigouplex 2000, Zigouplex 301, technologie spatiale, exploration spatiale" />
+        <meta name="description" content="Découvrez les fusées Zigouplex 2000 et 301, la nouvelle génération de lanceurs spatiaux combinant performance exceptionnelle, innovation technologique et développement durable." />
+        <meta name="keywords" content="lanceur spatial réutilisable, technologie spatiale française, propulsion spatiale, Zigouplex 2000, Zigouplex 301, satellite mise en orbite, fusée nouvelle génération, exploration spatiale durable, innovation aérospatiale, transport spatial commercial" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
 
-        <meta property="og:title" content="Zigouplex - Lanceurs Spatiaux de Nouvelle Génération" />
-        <meta property="og:description" content="Découvrez les fusées Zigouplex 2000 et 301, la nouvelle génération de lanceurs spatiaux." />
+        <meta property="og:title" content="Zigouplex - Révolutionner le Transport Spatial | Lanceurs Nouvelle Génération" />
+        <meta property="og:description" content="Découvrez comment Zigouplex révolutionne l'accès à l'espace avec ses lanceurs réutilisables de nouvelle génération." />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.zigouplex.space/favicon.png" />
+        <meta property="og:url" content="https://www.zigouplex.space" />
+        <meta property="og:site_name" content="Zigouplex" />
+        <meta property="og:locale" content="fr_FR" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@zigouplex" />
-        <meta name="twitter:title" content="Zigouplex - Lanceurs Spatiaux de Nouvelle Génération" />
-        <meta name="twitter:description" content="Découvrez les fusées Zigouplex 2000 et 301, la nouvelle génération de lanceurs spatiaux." />
+        <meta name="twitter:creator" content="@zigouplex" />
+        <meta name="twitter:title" content="Zigouplex - L'Innovation dans le Transport Spatial" />
+        <meta name="twitter:description" content="Explorez l'avenir du transport spatial avec les lanceurs Zigouplex." />
         <meta name="twitter:image" content="https://www.zigouplex.space/favicon.png" />
 
         <link rel="canonical" href="https://www.zigouplex.space" />
 
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@graph": [
-              {
-                "@type": ["WebSite", "Organization"],
-                "@id": "https://www.zigouplex.space/#website",
-                "url": "https://www.zigouplex.space",
-                "name": "Zigouplex",
-                "description": "Leader dans le développement de lanceurs spatiaux innovants"
-              },
-              {
-                "@type": "WebPage",
-                "@id": "https://www.zigouplex.space/#webpage",
-                "url": "https://www.zigouplex.space",
-                "name": "Zigouplex - Lanceurs Spatiaux de Nouvelle Génération",
-                "description": "Découvrez les fusées Zigouplex 2000 et 301, la nouvelle génération de lanceurs spatiaux combinant performance exceptionnelle et innovation technologique.",
-                "isPartOf": { "@id": "https://www.zigouplex.space/#website" },
-                "primaryImageOfPage": {
-                  "@type": "ImageObject",
-                  "@id": "https://www.zigouplex.space/#primaryimage",
-                  "url": "https://images.unsplash.com/photo-1516849841032-87cbac4d88f7",
-                  "width": 1920,
-                  "height": 1080
-                },
-                "breadcrumb": { "@id": "https://www.zigouplex.space/#breadcrumb" },
-                "inLanguage": "fr-FR",
-                "datePublished": "2024-01-01T00:00:00+00:00",
-                "dateModified": new Date().toISOString()
-              },
-              {
-                "@type": "BreadcrumbList",
-                "@id": "https://www.zigouplex.space/#breadcrumb",
-                "itemListElement": [
-                  {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Accueil",
-                    "item": "https://www.zigouplex.space"
-                  }
-                ]
-              }
-            ]
-          })}
+          {JSON.stringify(structuredData)}
         </script>
       </Head>
 
@@ -101,9 +131,9 @@ const SpacePage = () => {
           
           <nav className="relative z-20 container mx-auto p-4" role="navigation" aria-label="Navigation principale">
             <div className="flex justify-between items-center">
-              <h1 className="text-2xl font-bold">
-                <span className="sr-only">Zigouplex</span>
-                <img src="favicon.png" alt="Logo Zigouplex" className="h-8 md:h-10" />
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+                <span className="hover:text-blue-400 transition-colors">Zigouplex</span>
+                <img src="favicon.png" alt="Logo Zigouplex" className="h-12 md:h-14 lg:h-16 inline-block ml-3" />
               </h1>
               
               <button 
@@ -366,8 +396,8 @@ const SpacePage = () => {
               <p className="text-gray-400">&copy; 2024 Zigouplex. Tous droits réservés.</p>
               <nav>
                 <ul className="flex space-x-6">
-                  <li><a href="#" className="text-gray-400 hover:text-gray-300 transition-colors">Mentions légales</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-gray-300 transition-colors">Confidentialité</a></li>
+                  <li><a className="text-gray-400 hover:text-gray-300 transition-colors">Mentions légales</a></li>
+                  <li><a className="text-gray-400 hover:text-gray-300 transition-colors">Confidentialité</a></li>
                 </ul>
               </nav>
             </div>
