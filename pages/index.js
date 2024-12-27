@@ -61,19 +61,7 @@ const SpacePage = () => {
           "width": 1920,
           "height": 1080,
           "caption": "Lancement nocturne d'une fusée Zigouplex"
-        },
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "@id": "https://www.zigouplex.space/#breadcrumb",
-          "itemListElement" : [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Accueil",
-              "item": "https://www.zigouplex.space"
-            }
-          ]
-        },        
+        },   
         "inLanguage": "fr-FR",
         "datePublished": "2024-01-01T00:00:00+00:00",
         "dateModified": new Date().toISOString(),
@@ -91,7 +79,19 @@ const SpacePage = () => {
           "entreprise spatiale paris",
           "développement spatial île-de-france"
         ]
-      }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.zigouplex.space/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://www.zigouplex.space"
+          }
+        ]
+      },
     ]
   };
 
