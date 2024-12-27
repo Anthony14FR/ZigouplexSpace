@@ -62,7 +62,18 @@ const SpacePage = () => {
           "height": 1080,
           "caption": "Lancement nocturne d'une fusée Zigouplex"
         },
-        "breadcrumb": { "@id": "https://www.zigouplex.space/#breadcrumb" },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.zigouplex.space/#breadcrumb",
+          "itemListElement" : [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Accueil",
+              "item": "https://www.zigouplex.space"
+            }
+          ]
+        },        
         "inLanguage": "fr-FR",
         "datePublished": "2024-01-01T00:00:00+00:00",
         "dateModified": new Date().toISOString(),
@@ -88,7 +99,7 @@ const SpacePage = () => {
     <>
       <Head>
         <title>Zigouplex - Lanceurs Spatiaux de Nouvelle Génération</title>
-        <meta name="description" content="Découvrez les fusées Zigouplex 2000 et 301, la nouvelle génération de lanceurs spatiaux combinant performance exceptionnelle, innovation technologique et développement durable." />
+        <meta name="description" content="Découvrez les fusées Zigouplex 2000 et 301, la nouvelle génération de lanceurs spatiaux combinant performance exceptionnelle et innovation technologique" />
         <meta name="keywords" content="lanceur spatial réutilisable, technologie spatiale française, propulsion spatiale, Zigouplex 2000, Zigouplex 301, satellite mise en orbite, fusée nouvelle génération, exploration spatiale durable, innovation aérospatiale, transport spatial commercial" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
