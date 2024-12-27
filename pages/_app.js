@@ -6,6 +6,10 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta httpEquiv="Content-Language" content="fr" />
+        <meta property="og:locale" content="fr_FR" />
+        <meta name="language" content="French" />
+        <link rel="alternate" href="https://www.zigouplex.space" hrefLang="fr-FR" />
+        <link rel="alternate" href="https://www.zigouplex.space" hrefLang="x-default" />
       </Head>
       <Component {...pageProps} />
     </>
