@@ -5,7 +5,7 @@ import { format } from 'date-fns';
 import { fr } from 'date-fns/locale';
 import Link from 'next/link';
 
-export default function Post({ post, recentPosts }) {
+export default function Post({ post, recentPosts, sliceDescription }) {
   if (!post) return null;
 
   const title = `${post.title}`;
@@ -75,7 +75,7 @@ export default function Post({ post, recentPosts }) {
     <>
       <Head>
         <title>{title}</title>
-        <meta name="description" content={description} />
+        <meta name="description" content={sliceDescription(description)} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -110,8 +110,7 @@ export default function Post({ post, recentPosts }) {
             >
               {format(new Date(post.date), 'dd MMMM yyyy', { locale: fr })}
             </time>
-          </div>
-            
+          </div>            
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
 
         {recentPosts.length > 0 && (
@@ -179,6 +178,13 @@ export async function getStaticProps({ params }) {
       notFound: true,
     };
   }
+
+  const sliceDescription = (description) => {
+    if (description.length > 150) {
+      return `${description.slice(0, 150)}...`;
+    }
+    return description;
+  };
 
   const recentPosts = getAllPosts([
     'title',
