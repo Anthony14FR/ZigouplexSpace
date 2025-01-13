@@ -181,14 +181,14 @@ const SpacePage = () => {
 
           <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
                 Découvrez l'Espace grâce aux lanceurs Zigouplex
-              </h2>
-              <p className="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto">
+              </h1>
+              <h2 className="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto">
                 Les lanceurs Zigouplex représentent une révolution dans le
                 domaine spatial, combinant performance exceptionnelle et
                 innovation technologique.
-              </p>
+              </h2>
               <button
                 onClick={() => scrollToSection("features")}
                 className="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-3 rounded-full flex items-center mx-auto transition-colors"
