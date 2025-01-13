@@ -5,7 +5,7 @@ import { format } from 'date-fns';
 import { fr } from 'date-fns/locale';
 import Link from 'next/link';
 
-export default function Post({ post, recentPosts, sliceDescription }) {
+export default function Post({ post, recentPosts }) {
   if (!post) return null;
 
   const title = `${post.title}`;
@@ -179,13 +179,6 @@ export async function getStaticProps({ params }) {
     };
   }
 
-  const sliceDescription = (description) => {
-    if (description.length > 150) {
-      return `${description.slice(0, 150)}...`;
-    }
-    return description;
-  };
-
   const recentPosts = getAllPosts([
     'title',
     'date',
@@ -213,3 +206,10 @@ export async function getStaticPaths() {
     fallback: false
   };
 }
+
+export async function sliceDescription(description) {
+  if (description.length > 150) {
+    return `${description.slice(0, 150)}...`;
+  }
+  return description;
+};
