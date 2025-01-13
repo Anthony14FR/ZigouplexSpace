@@ -13,7 +13,6 @@ import {
   X,
 } from "lucide-react";
 import Head from "next/head";
-import Link from "next/link";
 import Navigation from "../components/Navigation";
 
 const SpacePage = () => {
@@ -160,9 +159,12 @@ const SpacePage = () => {
 
         <link rel="canonical" href="https://www.zigouplex.space" />
 
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
+        <script 
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ 
+            __html: JSON.stringify(structuredData)
+          }}
+        />
       </Head>
 
       <main className="min-h-screen bg-slate-900 text-white">
