@@ -183,7 +183,7 @@ const SpacePage = () => {
 
           <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+              <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-6 leading-tight">
                 Découvrez l'Espace grâce aux lanceurs Zigouplex
               </h1>
               <h2 className="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto">
@@ -559,14 +559,14 @@ const SpacePage = () => {
               <nav>
                 <ul className="flex space-x-6">
                   <li>
-                    <a className="text-gray-400 hover:text-gray-300 transition-colors">
+                    <p className="text-gray-400 hover:text-gray-300 transition-colors">
                       Mentions légales
-                    </a>
+                    </p>
                   </li>
                   <li>
-                    <a className="text-gray-400 hover:text-gray-300 transition-colors">
+                    <p className="text-gray-400 hover:text-gray-300 transition-colors">
                       Confidentialité
-                    </a>
+                    </p>
                   </li>
                 </ul>
               </nav>
