@@ -554,7 +554,7 @@ const SpacePage = () => {
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <p className="text-gray-400">
-                &copy; 2024 Zigouplex. Tous droits réservés.
+                &copy; 2025 Zigouplex. Tous droits réservés.
               </p>
               <nav>
                 <ul className="flex space-x-6">

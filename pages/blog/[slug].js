@@ -155,10 +155,12 @@ export default function Post({ post, recentPosts }) {
         </main>
 
         <div className="bg-blue-600 text-white text-center py-8">
-          <p className="text-lg font-semibold">Connaissez-vous vraiment le développeur fictif le plus connu d'internet ?</p>
+        <p className="text-lg font-semibold">Connaissez-vous vraiment Zigouplex Space ?</p>
           <p className="text-base md:text-sm opacity-90">
-            Découvrez qui il est, ce qu'il fait et comment il peut vous aider (ou pas) dans votre quotidien.
-          </p>          
+            Découvrez qui nous sommes, ce que nous faisons et comment nous pouvons vous aider dans votre quotidien.
+            <br></br>Mais attention, nous ne sommes pas responsables des dégâts causés par nos fusées.
+            Pourtant, nous avons une assurance.
+          </p>            
           <Link href="/"
             className="btn btn-white mt-4">
             En savoir plus sur Zigouplex Space →

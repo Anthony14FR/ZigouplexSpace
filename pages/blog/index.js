@@ -103,6 +103,24 @@ export default function Blog({ posts }) {
           "https://github.com/zigouplex",
           "https://twitter.com/zigouplex"
         ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.zigouplex.space/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.zigouplex.space/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://www.zigouplex.space/blog"
+          },
+        ]
       }
     ]
   };
@@ -141,6 +159,7 @@ export default function Blog({ posts }) {
         <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <h1 className="text-4xl font-bold text-white-700 mb-8 text-center">Découvrir les derniers articles de Blog</h1>
           <p className="text-lg text-white-500 mb-8 text-center">Vous trouverez ici les dernières actualités et informations sur les projets de Zigouplex Space.</p>
+          <p className="text-lg text-white-500 mb-8 text-center">N'hésitez pas à nous contacter si vous avez des questions ou des suggestions d'articles.</p>
           
           {currentPosts.length > 0 ? (
             <div className="space-y-10">
@@ -214,9 +233,11 @@ export default function Blog({ posts }) {
         </main>
 
         <div className="bg-blue-600 text-white text-center py-8">
-          <p className="text-lg font-semibold">Connaissez-vous vraiment le développeur fictif le plus connu d'internet ?</p>
+          <p className="text-lg font-semibold">Connaissez-vous vraiment Zigouplex Space ?</p>
           <p className="text-base md:text-sm opacity-90">
-            Découvrez qui il est, ce qu'il fait et comment il peut vous aider (ou pas) dans votre quotidien.
+            Découvrez qui nous sommes, ce que nous faisons et comment nous pouvons vous aider dans votre quotidien.
+            <br></br>Mais attention, nous ne sommes pas responsables des dégâts causés par nos fusées.
+            Pourtant, nous avons une assurance.
           </p>          
           <Link href="/"
             className="btn btn-white mt-4">
