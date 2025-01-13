@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="language" content="French" />
         <link rel="alternate" href="https://www.zigouplex.space" hrefLang="fr-FR" />
         <link rel="alternate" href="https://www.zigouplex.space" hrefLang="x-default" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Component {...pageProps} />
     </>

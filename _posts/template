@@ -1,0 +1,20 @@
+<article>
+  <!-- [OBLIGATOIRE] Métadonnées de l'article (toujours au début) -->
+  <div class="article-meta hidden">
+      <meta name="author" content="Zigouplex"> <!-- OBLIGATOIRE -->
+      <meta name="date" content="2024-03-26"> <!-- OBLIGATOIRE - Format YYYY-MM-DD -->
+      <meta name="banner" content="/images/lukas.webp"> <!-- OBLIGATOIRE -->
+      <meta name="subtitle" content="Sous-titre ou description courte de l'article">
+  </div>
+
+  <!-- [OBLIGATOIRE] Titre principal (un seul h1 par article) -->
+  <h1>Titre de l'article</h1>
+
+  <!-- [OBLIGATOIRE] Premier paragraphe qui sert de résumé -->
+  <p>Résumé de l'article qui apparaîtra dans la liste des articles et les partages sociaux.</p>
+
+  <!-- [LIBRE] Contenu de l'article -->
+  <!-- Utilisez les balises HTML standards : h2, h3, p, blockquote, ul, ol, img, etc. -->
+  <!-- Appliquez les classes Tailwind selon vos besoins -->
+
+</article>
