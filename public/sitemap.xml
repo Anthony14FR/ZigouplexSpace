@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.zigouplex.space/</loc>
-    <lastmod>2024-12-27</lastmod>
-    <changefreq>daily</changefreq>
+    <loc>https://www.zigouplex.space</loc>
+    <lastmod>2025-01-13T13:40:52.769Z</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.zigouplex.space/blog</loc>
+    <lastmod>2025-01-13T13:40:52.770Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.zigouplex.space/blog/conquete-mars-zigouplex-technologies</loc>
+    <lastmod>2025-01-13T11:56:15.706Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.zigouplex.space/blog/innovations-spatiales-2025</loc>
+    <lastmod>2025-01-13T13:06:15.981Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.zigouplex.space/blog/protection-thermique-adaptative-zigouplex</loc>
+    <lastmod>2025-01-13T13:11:12.203Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.zigouplex.space/blog/zigouplex-2000-lanceur-lourd</loc>
+    <lastmod>2025-01-13T13:27:23.284Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

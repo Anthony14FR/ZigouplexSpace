@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zigouplex.space/sitemap.xml
+Sitemap: https://www.zigouplex.space/sitemap.xml
