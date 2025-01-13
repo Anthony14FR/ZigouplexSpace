@@ -186,7 +186,7 @@ const SpacePage = () => {
               <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-6 leading-tight">
                 Découvrez l'Espace grâce aux lanceurs Zigouplex
               </h1>
-              <h2 className="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto">
+              <h2 className="text-lg md:text-xl lg:text-xl mb-8 max-w-2xl mx-auto">
                 Les lanceurs Zigouplex représentent une révolution dans le
                 domaine spatial, combinant performance exceptionnelle et
                 innovation technologique.
