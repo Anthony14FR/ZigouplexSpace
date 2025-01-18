@@ -48,7 +48,7 @@ export default function Navigation() {
             Zigouplex
           </span>
           <img
-            src="/favicon.png"
+            src="/favicon.webp"
             alt="Logo Zigouplex"
             className="h-12 md:h-14 lg:h-16 inline-block ml-3"
           />

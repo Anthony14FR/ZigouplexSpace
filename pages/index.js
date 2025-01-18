@@ -135,7 +135,7 @@ const SpacePage = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://www.zigouplex.space/favicon.png"
+          content="https://www.zigouplex.space/favicon.webp"
         />
         <meta property="og:url" content="https://www.zigouplex.space" />
         <meta property="og:site_name" content="Zigouplex" />
@@ -154,7 +154,7 @@ const SpacePage = () => {
         />
         <meta
           name="twitter:image"
-          content="https://www.zigouplex.space/favicon.png"
+          content="https://www.zigouplex.space/favicon.webp"
         />
 
         <link rel="canonical" href="https://www.zigouplex.space" />
@@ -171,7 +171,7 @@ const SpacePage = () => {
         <header className="relative h-screen">
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?auto=format&fit=crop&w=1920&q=80"
+              src="banner.webp"
               alt="Lancement spatial nocturne"
               className="object-cover w-full h-full"
               loading="eager"
@@ -186,7 +186,7 @@ const SpacePage = () => {
               <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-6 leading-tight">
                 Découvrez l'Espace grâce aux lanceurs Zigouplex
               </h1>
-              <h2 className="text-sm md:text-lg lg:text-xl mb-8 max-w-2xl mx-auto">
+              <h2 className="text-xs md:text-md lg:text-lg mb-8 max-w-2xl mx-auto">
                 Les lanceurs Zigouplex représentent une révolution dans le
                 domaine spatial, combinant performance exceptionnelle et
                 innovation technologique.
@@ -214,7 +214,7 @@ const SpacePage = () => {
               <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
                 <div className="space-y-6">
                   <img
-                    src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&w=800&q=80"
+                    src="zigouplex-2000.webp"
                     alt="Zigouplex 2000"
                     className="rounded-lg w-full h-64 md:h-80 object-cover"
                     loading="lazy"
@@ -253,7 +253,7 @@ const SpacePage = () => {
 
                 <div className="space-y-6">
                   <img
-                    src="https://images.unsplash.com/photo-1457364559154-aa2644600ebb?auto=format&fit=crop&w=800&q=80"
+                    src="zigouplex-301.webp"
                     alt="Zigouplex 301"
                     className="rounded-lg w-full h-64 md:h-80 object-cover"
                     loading="lazy"
@@ -358,7 +358,7 @@ const SpacePage = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <article className="bg-slate-700 rounded-lg p-6 md:p-8">
                 <img
-                  src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
+                  src="mission-scientifique.webp"
                   alt="Mission scientifique"
                   className="rounded-lg w-full h-48 md:h-64 object-cover mb-6"
                   loading="lazy"
@@ -391,7 +391,7 @@ const SpacePage = () => {
 
               <article className="bg-slate-700 rounded-lg p-6 md:p-8">
                 <img
-                  src="https://images.unsplash.com/photo-1446776858070-70c3d5ed6758?auto=format&fit=crop&w=800&q=80"
+                  src="satellites-de-telecommunication.webp"
                   alt="Satellites de télécommunication"
                   className="rounded-lg w-full h-48 md:h-64 object-cover mb-6"
                   loading="lazy"
